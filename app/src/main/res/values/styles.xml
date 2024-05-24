@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorP</item>
+        <item name="colorPrimaryDark">@color/colorS</item>
+        <item name="colorAccent">@color/colorA</item>
+    </style>
+
+    <style name="BotonCalculadora">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@color/colorA</item>
+        <item name="android:textColor">@color/colorB</item>
+    </style>
+</resources>
+

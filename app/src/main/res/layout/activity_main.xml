@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutBotones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoResultado">
+
+        <!-- linea 1 -->
+        <TableRow>
+            <Button
+                android:id="@+id/boton7"
+                style="@style/BotonCalculadora"
+                android:text="7" />
+            <Button
+                android:id="@+id/boton8"
+                style="@style/BotonCalculadora"
+                android:text="8" />
+            <Button
+                android:id="@+id/boton9"
+                style="@style/BotonCalculadora"
+                android:text="9" />
+            <Button
+                android:id="@+id/botonDividir"
+                style="@style/BotonCalculadora"
+                android:text="/" />
+        </TableRow>
+        <!-- linea 2 -->
+        <TableRow>
+            <Button
+                android:id="@+id/boton4"
+                style="@style/BotonCalculadora"
+                android:text="4" />
+            <Button
+                android:id="@+id/boton5"
+                style="@style/BotonCalculadora"
+                android:text="5" />
+            <Button
+                android:id="@+id/boton6"
+                style="@style/BotonCalculadora"
+                android:text="6" />
+            <Button
+                android:id="@+id/botonMultiplicar"
+                style="@style/BotonCalculadora"
+                android:text="*" />
+        </TableRow>
+        <!-- linea 3 -->
+        <TableRow>
+            <Button
+                android:id="@+id/boton1"
+                style="@style/BotonCalculadora"
+                android:text="1" />
+            <Button
+                android:id="@+id/boton2"
+                style="@style/BotonCalculadora"
+                android:text="2" />
+            <Button
+                android:id="@+id/boton3"
+                style="@style/BotonCalculadora"
+                android:text="3" />
+            <Button
+                android:id="@+id/botonRestar"
+                style="@style/BotonCalculadora"
+                android:text="-" />
+        </TableRow>
+        <!-- linea 4 -->
+        <TableRow >
+            <Button
+                android:id="@+id/boton0"
+                style="@style/BotonCalculadora"
+                android:text="0" />
+            <Button
+                android:id="@+id/botonIgual"
+                style="@style/BotonCalculadora"
+                android:layout_width="99dp"
+                android:layout_span="1"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/botonSumar"
+                style="@style/BotonCalculadora"
+                android:text="+" />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/botonC"
+                style="@style/BotonCalculadora"
+                android:text="C" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
